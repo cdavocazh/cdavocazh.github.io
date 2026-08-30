@@ -6,12 +6,6 @@ hide:
 
 # Kris Zhang
 
-### AI / Growth PM — agentic systems, financial data, product strategy
-
-Singapore-based. Staff Product Manager (Growth) at DCS Group (DeCard) — a B2C PayFi /
-crypto-card business. Outside work I build multi-agent systems for systematic trading
-analysis, macro market intelligence, and financial research.
-
 [GitHub](https://github.com/cdavocazh){ .md-button } [LinkedIn](https://www.linkedin.com/in/kriszhang01/){ .md-button }
 
 ---

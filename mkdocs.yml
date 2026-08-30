@@ -62,6 +62,13 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+# Self-hosted mermaid (pinned v11): Material's built-in integration lazy-loads
+# mermaid from unpkg only when `typeof mermaid == "undefined"` — pre-loading a
+# vendored copy removes the third-party CDN dependency (silent empty-div
+# failure for viewers whose network blocks unpkg).
+extra_javascript:
+  - assets/javascripts/mermaid.min.js
+
 extra:
   social:
     - icon: fontawesome/brands/github

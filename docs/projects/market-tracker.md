@@ -9,8 +9,10 @@
 [:material-github: macro layer — public repo](https://github.com/cdavocazh/macro_2){ .md-button }
 [:material-open-in-new: Live dashboard](http://awehawk.cloud/){ .md-button .md-button--primary }
 
-*The macro-data layer is public. The equity/news/backtest layer and the
-Twitter summarizer are private repos; their architecture is documented below.*
+*The macro-data layer is public and runs the live dashboard above — every
+source it uses is free, which is what makes it publishable. The equity/news
+and social layers run against licensed broker data and a personal portfolio,
+so they are documented here rather than published.*
 
 ---
 

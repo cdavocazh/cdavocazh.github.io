@@ -8,10 +8,12 @@
 
 [:material-github: Architecture docs — public repo](https://github.com/cdavocazh/financial-agent-docs){ .md-button }
 
-*The implementation is a private repo (~29k LOC Python across 82 tools, plus
-~33k lines of markdown knowledge base) because it reads a personal portfolio
-and a paid research corpus. The public repo above documents the architecture,
-infrastructure, and evaluation methodology in full.*
+*The linked repo is a reference write-up: architecture, infrastructure, and
+evaluation methodology in full — the parts that transfer to any agent system
+of this shape. The system itself (~29k LOC Python across 82 tools, plus ~33k
+lines of markdown knowledge base) runs against a personal portfolio and a
+licensed research corpus, so the write-up rather than the source is what is
+useful to share.*
 
 ---
 

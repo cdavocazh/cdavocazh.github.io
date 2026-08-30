@@ -8,11 +8,12 @@
 
 [:material-github: Orchestration framework — public repo](https://github.com/cdavocazh/macro-trader-orchestration){ .md-button }
 
-*The full system is a private repo (~14k LOC — Python core, bash agent
-wrappers, React dashboard). The public repo above extracts the orchestration
-layer — DAG runner, context-budget manager, and TF-IDF memory store — with two
-runnable demos and no dependencies. Agent prompts, risk-gate thresholds, and
-trading content are not included.*
+*The linked repo is a reference implementation of the orchestration layer —
+DAG runner, context-budget manager, and TF-IDF memory store — with two
+runnable demos. It carries the machinery that generalises; the prompts, gate
+thresholds, and market content it happens to drive are domain-specific and
+stay with the running system (~14k LOC across a Python core, bash agent
+wrappers, and a React dashboard).*
 
 ---
 

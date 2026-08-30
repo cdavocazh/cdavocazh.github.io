@@ -169,14 +169,3 @@ JSON on each run, so the serving path needs no always-on backend.
 - **Ops:** VPS deployment under systemd timers (weekday pipeline runs, daily
   infra QA, thrice-weekly process review), Telegram alerting
 - **Scale:** ~14k hand-written LOC (≈10k Python, ≈2.6k bash, ≈1.5k JSX)
-
-## What I'd do differently
-
-Wire retention enforcement into the run loop from day one — the semantic
-memory's 90-day prune existed as a tool before it was scheduled, which is
-how "designed" and "true" quietly diverge. Treat the perception stage as the
-single point of failure it is: most aborted runs die there, so it deserved a
-fallback data path and richer failure telemetry much earlier. And version the
-agent prompts as first-class artifacts with golden-set regression — prompt
-edits currently ship on trust, and the process-supervisor agent can only
-critique what the pipeline records, not what the prompts silently changed.

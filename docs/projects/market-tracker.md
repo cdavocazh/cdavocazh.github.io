@@ -91,8 +91,9 @@ top, not in data access.
 The positioning/OI and news layers were built explicitly to replace a few
 thousand dollars a year of vendor data with broker-provided and public
 endpoints, snapshotted daily into local parquet/SQLite. Tradeoff: you own
-backfill, gap-repair, and revision handling forever — see below for how
-that bit back.
+backfill, gap-repair, and revision handling forever — a real cost, not a
+footnote: one unit-convention fix was applied going forward but never
+backfilled, leaving a permanent discontinuity in that column.
 
 ### Files and caches over a shared database
 
@@ -135,15 +136,3 @@ for.
 | Equity / news (private) | Python 3.11 · ib_async · FinBERT (transformers) · SQLite + parquet · FastAPI + React/TS dashboard · Docker (gateway) |
 | Social (private) | Python · third-party Twitter API · LLM summarization with provider fallback · Telegram bot |
 | Ops | launchd (Mac) + systemd timers (VPS) · nginx · Telegram alerting |
-
-## What I'd do differently
-
-Backfill discipline from day one: a funding-rate annualization bug was fixed
-going forward but the pre-fix rows were never backfilled, leaving a
-permanent one-time step in those columns — the lesson is that a data fix
-isn't done until history is reconciled or the discontinuity is annotated in
-the schema. Consolidate the four dashboard frontends into one — they were a
-useful bake-off (Streamlit vs Dash vs React vs Grafana) that overstayed as
-four production surfaces. And promote the "output must advance" freshness
-check from a per-job afterthought into the shared job wrapper, since every
-silent failure found later traced back to a job that predated it.

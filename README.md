@@ -64,5 +64,5 @@ and deploys automatically. First-time setup after pushing the repo:
 - **Mermaid for diagrams.** GitHub Pages renders them client-side via the
   `pymdownx.superfences` extension configured in `mkdocs.yml`.
 - **No inline screenshots wider than 1200px.** Resize before committing.
-- **Every writeup has six sections:** Problem · Architecture · Design choices
-  & tradeoffs · Sample output · Stack · What I'd do differently.
+- **Every writeup has five sections:** Problem · Architecture · Design choices
+  & tradeoffs · Sample output · Stack.

@@ -154,14 +154,3 @@ step a separate tool call with its output carried into the final write-up.
 - **Surfaces:** CLI, interactive chat, Telegram bot (session-continuous)
 - **Ops:** dual-host — local launchd jobs + VPS systemd timers sharing a
   synced context layer
-
-## What I'd do differently
-
-Build the interpretation-layer test harness alongside the first five
-commands instead of after the fortieth — data pipelines fail loudly, but a
-mis-named composite fails silently and confidently, and that class of bug
-took a dedicated evaluation methodology to surface. Define per-command
-output schemas from the start so downstream consumers (the Macro Trader
-pipeline) parse structures instead of prose. And treat the knowledge-base
-index files as code — they are the retrieval system, and for months nothing
-enforced that they stayed complete.

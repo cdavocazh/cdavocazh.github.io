@@ -8,10 +8,6 @@ hide:
 
 [GitHub](https://github.com/cdavocazh){ .md-button } [LinkedIn](https://www.linkedin.com/in/kriszhang01/){ .md-button }
 
----
-
-## Projects
-
 <div class="grid cards" markdown>
 
 -   :material-graph-outline: **[Macro Trader](projects/macro-trader.md)**
@@ -23,8 +19,6 @@ hide:
     review — under a DAG orchestrator with deterministic risk gates, per-agent
     context budgets, and TF-IDF memory with 90-day retention.
 
-    *Python · Claude Code agents · DAG orchestration · SQLite · systemd*
-
 -   :material-chart-timeline-variant: **[Market Tracker](projects/market-tracker.md)**
 
     ---
@@ -34,8 +28,6 @@ hide:
     Polymarket, Hyperliquid, Bitcoin and onchain metrics, Twitter-list summarization.
     Public macro layer + live dashboard.
 
-    *Python · multi-source ingestion · FinBERT · Dash / React / Grafana · systemd*
-
 -   :material-cog-outline: **[Financial Agent](projects/financial-agent.md)**
 
     ---
@@ -44,8 +36,6 @@ hide:
     framework. A skill dispatcher routes ~50 analysis commands (macro regime,
     financial-stress scoring, late-cycle detection, stop-loss technicals, equity
     analysis) to a deterministic Python tool layer.
-
-    *Python · Claude Code skills · MCP · dispatcher pattern · agent-native retrieval*
 
 </div>
 

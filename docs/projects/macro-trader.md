@@ -6,8 +6,13 @@
 > ETL, per-agent context budgets, and TF-IDF memory with 90-day retention.
 > Runs unattended on a VPS under systemd timers.
 
-*Source: private repo (~14k LOC — Python core, bash agent wrappers, React
-dashboard). Architecture documented below; a public docs edition is planned.*
+[:material-github: Orchestration framework — public repo](https://github.com/cdavocazh/macro-trader-orchestration){ .md-button }
+
+*The full system is a private repo (~14k LOC — Python core, bash agent
+wrappers, React dashboard). The public repo above extracts the orchestration
+layer — DAG runner, context-budget manager, and TF-IDF memory store — with two
+runnable demos and no dependencies. Agent prompts, risk-gate thresholds, and
+trading content are not included.*
 
 ---
 

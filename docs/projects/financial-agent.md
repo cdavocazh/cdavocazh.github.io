@@ -6,9 +6,12 @@
 > stop-loss technicals, equity and options analysis) to a deterministic
 > Python tool layer, then interprets results against a versioned rules corpus.
 
-*Source: private repo (~29k LOC Python across 82 tools, plus ~33k lines of
-markdown knowledge base). Architecture documented below; a public docs
-edition is planned.*
+[:material-github: Architecture docs — public repo](https://github.com/cdavocazh/financial-agent-docs){ .md-button }
+
+*The implementation is a private repo (~29k LOC Python across 82 tools, plus
+~33k lines of markdown knowledge base) because it reads a personal portfolio
+and a paid research corpus. The public repo above documents the architecture,
+infrastructure, and evaluation methodology in full.*
 
 ---
 

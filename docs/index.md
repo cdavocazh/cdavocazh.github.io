@@ -45,6 +45,6 @@ hide:
 
 - **Agentic systems** — orchestration patterns, memory design, evaluation, cost/latency routing
 - **Financial & market-data pipelines** — macro, equity, crypto, onchain, prediction markets
-- **Product management** — AI-product strategy, growth loops, payments / fintech / PayFi
+- **Product management** — AI-product strategy, trading / payments / fintech, growth product
 
 See [About](about.md) for background and contact.

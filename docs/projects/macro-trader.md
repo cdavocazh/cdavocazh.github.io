@@ -12,8 +12,7 @@
 DAG runner, context-budget manager, and TF-IDF memory store — with two
 runnable demos. It carries the machinery that generalises; the prompts, gate
 thresholds, and market content it happens to drive are domain-specific and
-stay with the running system (~14k LOC across a Python core, bash agent
-wrappers, and a React dashboard).*
+stay with the running system.*
 
 ---
 
@@ -169,4 +168,3 @@ JSON on each run, so the serving path needs no always-on backend.
 - **Dashboard:** React 18 + Vite + Recharts, statically served
 - **Ops:** VPS deployment under systemd timers (weekday pipeline runs, daily
   infra QA, thrice-weekly process review), Telegram alerting
-- **Scale:** ~14k hand-written LOC (≈10k Python, ≈2.6k bash, ≈1.5k JSX)

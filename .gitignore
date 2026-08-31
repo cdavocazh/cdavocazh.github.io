@@ -5,3 +5,7 @@ __pycache__/
 .DS_Store
 .idea/
 .vscode/
+
+# Private operator runbook — never published (see README.md for the public one)
+README.local.md
+*.local.md

@@ -27,7 +27,7 @@ and deploys automatically. First-time setup after pushing the repo:
 
 1. GitHub → repo → Settings → Pages → **Source: GitHub Actions**
 2. Push to `main`
-3. Wait ~60s; site is live at `https://cdavocazh.github.io/` (or `https://kris.awehawk.cloud/` once DNS propagates)
+3. Wait ~60s; site is live at `https://cdavocazh.github.io/`
 
 ## Adding a new project writeup
 
